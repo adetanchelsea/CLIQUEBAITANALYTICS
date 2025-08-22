@@ -1,4 +1,4 @@
-# Clique Bait Analytics with SnowFlaee and Streamlit 📊
+# Clique Bait Analytics with SnowFlake and Streamlit 📊
 
 ## Project Overview
 This project was inspired by the **8-Week SQL Challenge (Case Study 6 – Clique Bait)**.  
