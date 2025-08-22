@@ -9,6 +9,14 @@ To make the insights interactive and accessible, I built a **Streamlit dashboard
 
 ---
 
+## Tools & Technologies Used
+- **Snowflake** – Cloud-based data warehouse for storing and querying large datasets.  
+- **SQL** – Extracting insights such as user engagement, conversions, and campaign performance.  
+- **Python & Pandas** – Data manipulation and integration with Streamlit.  
+- **Streamlit** – Interactive dashboard for visualization of metrics and trends.  
+
+---
+
 ## Key Features
 - **Interactive Dashboard with Streamlit** – Explore user behavior, funnel analysis, campaign performance, and product-category insights.  
 - **Real-time Snowflake Integration** – Pulls live data using Snowpark/Python connector for up-to-date analysis.  
@@ -24,14 +32,6 @@ To make the insights interactive and accessible, I built a **Streamlit dashboard
 3. **🛒 Checkout & Conversion** – Conversion analysis, average view-to-cart and cart-to-purchase rates, and abandonment by category.  
 
 **Filters:** Product and campaign selection for focused analysis.
-
----
-
-## Tools & Technologies Used
-- **Snowflake** – Cloud-based data warehouse for storing and querying large datasets.  
-- **SQL** – Extracting insights such as user engagement, conversions, and campaign performance.  
-- **Python & Pandas** – Data manipulation and integration with Streamlit.  
-- **Streamlit** – Interactive dashboard for visualization of metrics and trends.  
 
 ---
 
