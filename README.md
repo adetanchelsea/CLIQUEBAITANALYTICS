@@ -1,6 +1,6 @@
 # Clique Bait Analytics with SnowFlake and Streamlit 📊
 
-In this repository, I documented the code and resources used in carrying out an exploratory analytics on SnowSQL and building a dashboard with Streamlit on Snowflake. 
+In this repository, I documented the code and resources used in carrying out an exploratory analytics with SnowSQL and building a dashboard with Streamlit on Snowflake. 
 
 
 ## Table of Contents
