@@ -4,15 +4,15 @@ In this repository, I documented the code and resources used in carrying out an 
 
 
 ## Table of Contents
-- [Project Overview](##Project-Overview)
-- [Key Features](##Key-Features)
-- [Architecture](#Architecture)
-- [Project Setup](##Project-Setup)
-  -  [Prerequisites](###Prerequisites)
-  -  [Installation](###Installation)
-  -  [Environment Variables](###Environment-Variables)
-- [How It Works](##How-It-Works)
-- [Usage](##Usage)
+- [Project Overview](#project-overview)
+- [Key Features](#key-features)
+- [Architecture](#architecture)
+- [Project Setup](#project-setup)
+  -  [Prerequisites](#prerequisites)
+  -  [Installation](#installation)
+  -  [Environment Variables](#environment-variables)
+- [How It Works](#how-it-works)
+- [Usage](#usage)
 ---
 ## Project Overview
 This project was inspired by the **8-Week SQL Challenge (Case Study 6 – Clique Bait)**.  
