@@ -6,7 +6,9 @@ In this repository, I documented the code and resources used in carrying out an 
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Key Features](#key-features)
+- [Entity Relationship Diagram](#entity-relationship-diagram)
 - [Architecture](#architecture)
+- [Tools & Technologies Used](#tools--technologies-used)
 - [Project Setup](#project-setup)
   -  [Prerequisites](#prerequisites)
   -  [Installation](#installation)
@@ -15,11 +17,7 @@ In this repository, I documented the code and resources used in carrying out an 
 - [Usage](#usage)
 ---
 ## Project Overview
-This project was inspired by the **8-Week SQL Challenge (Case Study 6 – Clique Bait)**.  
-Clique Bait is an online seafood store that runs digital marketing campaigns to attract customers.  
-The goal of this project was to **analyze user behavior**, **track campaign effectiveness**, and **understand the product purchase funnel**.  
-To make the insights interactive and accessible, I built a **Streamlit dashboard** that visualizes outputs directly from Snowflake.
-
+This project was inspired by the **8-Week SQL Challenge (Case Study 6 – Clique Bait)**.  Clique Bait is an online seafood store that runs digital marketing campaigns to attract customers.  The goal of this project was to **analyze user behavior**, **track campaign effectiveness**, and **understand the product purchase funnel**.  To make the insights interactive and accessible, I built a **Streamlit dashboard** that visualizes outputs directly from Snowflake.
 
 ## Key Features
 - **Interactive Dashboard with Streamlit** – Explore user behavior, funnel analysis, campaign performance, and product-category insights.  
@@ -28,8 +26,17 @@ To make the insights interactive and accessible, I built a **Streamlit dashboard
 - **Visual Analytics** – Line charts, bar charts, pie charts, and detailed data tables.  
 - **Downloadable Reports** – Export product funnel, campaign performance, and checkout/conversion data as CSV.
 
-## Architecture
+## Entity Relationship Diagram
+The ERD illustrates the relationship between the five main tables used in this project:
 
+- Users
+- Events
+- Event Identifier
+- Campaign Identifier
+- Page Hierarchy
+![Clique Bait ERD](images/erd.webp)
+## Architecture
+![Architecture](images/architecture.png)
 ## Tools & Technologies Used
 - **Snowflake** – Cloud-based data warehouse for storing and querying large datasets.  
 - **SQL** – Extracting insights such as user engagement, conversions, and campaign performance.  
@@ -44,8 +51,7 @@ Before you begin, ensure you have the following:
 - Access to Streamlit Apps in Snowflake.
 
 ### Installation
-Since this project is executed primarily in Snowflake, you mostly just need to open an account in Snowflake.  
-However, if you want to clone this repository for reference or run any supporting scripts:
+Since this project is executed primarily in Snowflake, you mostly just need to open an account in Snowflake.  However, if you want to clone this repository for reference or run any supporting scripts:
 
 ```bash
 # Clone this repository
@@ -97,7 +103,7 @@ SNOWFLAKE_SCHEMA=clique_bait
 ## Usage
 
 ### 1. Access the Snowflake SQL Queries
-- Navigate to the `dbcreation.sql/` & `analysis.sql` files in this repository to create your database, load data and generate insights.
+- Navigate to the `dbcreation.sql` & `analysis.sql` files in this repository to create your database, load data and generate insights.
 
 ### 2. View the Streamlit Dashboard
 - The interactive dashboard can be launched from **Streamlit** (if running locally):
