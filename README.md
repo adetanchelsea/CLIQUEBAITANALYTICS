@@ -2,25 +2,24 @@
 
 In this repository, I documented the code and resources used in carrying out an exploratory analytics on SnowSQL and building a dashboard with Streamlit on Snowflake. 
 
----
+
 ## Table of Contents
-- [Project Overview](## Project Overview)
-- [Key Features](## Key Features)
-- [Architecture](## Architecture)
-- [Project Setup](## Project Setup)
-  -  [Prerequisites](### Prerequisites)
-  -  [Installation](### Installation)
-  -  [Environment Variables](### Environment Variables)
-- [How It Works](## How It Works)
-- [Usage](## Usage)
+- [Project Overview](##Project-Overview)
+- [Key Features](##Key-Features)
+- [Architecture](#Architecture)
+- [Project Setup](##Project-Setup)
+  -  [Prerequisites](###Prerequisites)
+  -  [Installation](###Installation)
+  -  [Environment Variables](###Environment-Variables)
+- [How It Works](##How-It-Works)
+- [Usage](##Usage)
 ---
 ## Project Overview
 This project was inspired by the **8-Week SQL Challenge (Case Study 6 – Clique Bait)**.  
 Clique Bait is an online seafood store that runs digital marketing campaigns to attract customers.  
 The goal of this project was to **analyze user behavior**, **track campaign effectiveness**, and **understand the product purchase funnel**.  
-
 To make the insights interactive and accessible, I built a **Streamlit dashboard** that visualizes outputs directly from Snowflake.
----
+
 
 ## Key Features
 - **Interactive Dashboard with Streamlit** – Explore user behavior, funnel analysis, campaign performance, and product-category insights.  
@@ -28,15 +27,15 @@ To make the insights interactive and accessible, I built a **Streamlit dashboard
 - **KPI Highlights** – Total users, average cookies per user, conversion rates, abandoned products, top pages, and more.  
 - **Visual Analytics** – Line charts, bar charts, pie charts, and detailed data tables.  
 - **Downloadable Reports** – Export product funnel, campaign performance, and checkout/conversion data as CSV.
----
+
 ## Architecture
----
+
 ## Tools & Technologies Used
 - **Snowflake** – Cloud-based data warehouse for storing and querying large datasets.  
 - **SQL** – Extracting insights such as user engagement, conversions, and campaign performance.  
 - **Python & Pandas** – Data manipulation and integration with Streamlit.  
 - **Streamlit** – Interactive dashboard for visualization of metrics and trends.
----
+
 ## Project Setup
 ### Prerequisites
 Before you begin, ensure you have the following:
@@ -66,7 +65,7 @@ SNOWFLAKE_WAREHOUSE=your_warehouse
 SNOWFLAKE_DATABASE=your_database
 SNOWFLAKE_SCHEMA=clique_bait
 ```
----
+
 ## How It Works
 
 ### 1. **Data Loading**
@@ -94,7 +93,7 @@ SNOWFLAKE_SCHEMA=clique_bait
   - KPI cards for quick stats.
   - Charts and tables for funnel visualization.
   - Filters for campaigns, dates, and product categories.
----
+
 ## Usage
 
 ### 1. Access the Snowflake SQL Queries
