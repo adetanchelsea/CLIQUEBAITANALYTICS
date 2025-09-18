@@ -18,7 +18,7 @@ The dataset for this project was provided in the Clique Bait case study from the
 
 To structure the data for analysis, I created a schema named clique_bait in Snowflake and defined tables based on the provided dataset. Below is the ERD (Entity Relationship Diagram) used to visualize the relationships between the tables:
 
-![ERD](../Downloads/erd.jpg)
+![ERD](../images/erd.jpg)
 
 ## EXPLORATORY ANALYSIS IN SNOWFLAKE
 
