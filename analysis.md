@@ -29,7 +29,7 @@ To structure the data for analysis, I created a schema named clique_bait in Snow
 SELECT DISTINCT COUNT(*) FROM USERS;
 ```
 
-![ERD](../Downloads/one.jpg)
+![ERD](images/one.jpg)
 
 2. How many cookies does each user have on average?
 
@@ -45,7 +45,7 @@ FROM (
 );
 ```
 
-![ERD](../Downloads/two.jpg)
+![ERD](images/two.jpg)
 
 3. What is the unique number of visits by all users per month?
 
@@ -59,7 +59,7 @@ GROUP BY DATE_TRUNC('month', EVENT_TIME)
 ORDER BY unique_visits DESC
 ```
 
-![ERD](../Downloads/three.jpg)
+![ERD](images/three.jpg)
 
 4. What is the number of events for each event type?
 
@@ -71,7 +71,7 @@ INNER JOIN EVENT_IDENTIFIER ON EVENTS.EVENT_TYPE = EVENT_IDENTIFIER.EVENT_TYPE
 GROUP BY EVENTS.EVENT_TYPE
 ```
 
-![ERD](../Downloads/four.jpg)
+![ERD](images/four.jpg)
 
 5.  What is the percentage of visits which have a purchase event?
 
@@ -90,7 +90,7 @@ SELECT
 FROM visit_purchase;
 ```
 
-![ERD](../Downloads/five.jpg)
+![ERD](images/five.jpg)
 
 6. What are the top 3 pages by number of views?
 
@@ -107,7 +107,7 @@ ORDER BY view_count DESC
 LIMIT 3;
 ```
 
-![ERD](../Downloads/six.jpg)
+![ERD](images/six.jpg)
 
 7. What is the percentage of visits which view the checkout page but do not have a purchase event?
 
@@ -130,7 +130,7 @@ FROM checkout_visits
 WHERE visit_id NOT IN (SELECT visit_id FROM purchase_visits);
 ```
 
-![ERD](../Downloads/seven.jpg)
+![ERD](images/seven.jpg)
 
 To go further in the analysis, I wrote a single SQL query that generates an output table summarizing key metrics for each product, including the number of views, times added to cart, instances of cart abandonment (added to cart but not purchased), and the total purchases. Additionally, I created another aggregated table that presents the same metrics at the product category level, providing a broader view of category performance across the platform.
 
@@ -159,7 +159,7 @@ ORDER BY times_purchased DESC;
 SELECT * FROM product_funnel_summary;
 ```
 
-![ERD](../Downloads/funnel.jpg)
+![ERD](images/funnel.jpg)
 
 
 ```python
@@ -188,7 +188,7 @@ ORDER BY TIMES_PURCHASED DESC;
 SELECT * FROM CATEGORY_FUNNEL_SUMMARY;
 ```
 
-![ERD](../Downloads/funnel2.jpg)
+![ERD](images/funnel2.jpg)
 
 8. Which product was most likely to be abandoned?
 
@@ -205,7 +205,7 @@ ORDER BY ABANDONMENT_RATE DESC
 LIMIT 1;
 ```
 
-![ERD](../Downloads/funnel3.jpg)
+![ERD](images/funnel3.jpg)
 
 9. What is the average conversion rate from view to cart add?
 
@@ -217,7 +217,7 @@ FROM PRODUCT_FUNNEL_SUMMARY
 WHERE VIEWS > 0;
 ```
 
-![ERD](../Downloads/funnel4.jpg)
+![ERD](images/funnel4.jpg)
 
 ## KEY INSIGHTS
 
